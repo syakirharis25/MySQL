@@ -1,0 +1,18 @@
+* SQL commands and keywords are case-insensitive.
+* Table names are case-sensitive on Linux and OS X, but case-insensitive on Windows.
+
+* MySQL Data Types : 1)INT UNSIGNED, 2)NOT NULL, 3)AUTO-INCREMENT, 4)KEY, 5)UNIQUE, 6)PRIMARY KEY
+
+\c : exit from MysQL syntax program
+
+* bin\mysql -u root        : grant access to MySQL program in the root directory without using password
+* bin\mysql -u username -p : grant access to MySQL program for the username using specific password
+
+GRANT ALL on databasename.* TO 'username'@'localhost'
+IDENTIFIED BY 'password'; : grant all access to databasename for the username in the local machine that entered password
+
+SHOW databases; : show the current databases in the system
+CREATE DATABASE databasename : create new databasename
+
+DESCRIBE table; : show the description of the created table
+
