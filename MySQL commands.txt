@@ -16,3 +16,15 @@ CREATE DATABASE databasename : create new databasename
 
 DESCRIBE table; : show the description of the created table
 
+* A table is a database object that is composed of rows and columns and contains related data.
+* A table is created in SQL using the "CREATE TABLE" command.
+
+* A field is a column in a table that is supposed to provide specific information about all records in the table.
+
+* A record is a row in a table. It is also known as "horizontal entity of a table".
+
+* A column is a vertical entity in a table that contains information associated with a specific field.
+
+* Null Value is NO VALUE. It is a space or zero, it is NOTHING!
+* While inserting data in a table, if you do not provide value for a cell, the cell is said to contain Null Value.
+
