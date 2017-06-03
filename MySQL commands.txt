@@ -47,3 +47,5 @@ DROP DATABASE databasename; : drop,delete the databasename from the system
 * If while populating a table, you miss giving a column some value, the default value will be used.
 
 * Unique Constraint makes sure that all values entered for the field on which the constraint is applied are different.
+
+DESC tablename; : display, describe the tablename contents.
