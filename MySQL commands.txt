@@ -41,3 +41,9 @@ DROP DATABASE databasename; : drop,delete the databasename from the system
 * Year (YYYY)
 
 * BLOB (Binary Large Object) : to store images
+
+* If you want to make sure that a field gets some value for every row in the table, apply the not null constraint to it.
+
+* If while populating a table, you miss giving a column some value, the default value will be used.
+
+* Unique Constraint makes sure that all values entered for the field on which the constraint is applied are different.
