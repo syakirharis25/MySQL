@@ -28,3 +28,4 @@ DESCRIBE table; : show the description of the created table
 * Null Value is NO VALUE. It is a space or zero, it is NOTHING!
 * While inserting data in a table, if you do not provide value for a cell, the cell is said to contain Null Value.
 
+DROP DATABASE databasename; : drop,delete the databasename from the system
