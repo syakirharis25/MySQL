@@ -29,3 +29,15 @@ DESCRIBE table; : show the description of the created table
 * While inserting data in a table, if you do not provide value for a cell, the cell is said to contain Null Value.
 
 DROP DATABASE databasename; : drop,delete the databasename from the system
+
+* A data type is a property that specifies the type of data you can put in your table.
+* Each field has a data-type and all values for a field that have the same data-type.
+
+* Numeric Fields : a)Bigint (really big values!), b)Int (big values), c)Smallint (-32,768 to 32,767), d)Tinyint(0 to 255) 
+
+* Datetime(YYYY-MM HH:MM:SS)
+* Date (YYYY-MM-DD)
+* Time (HH:MM:SS)
+* Year (YYYY)
+
+* BLOB (Binary Large Object) : to store images
