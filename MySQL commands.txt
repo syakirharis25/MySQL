@@ -48,4 +48,6 @@ DROP DATABASE databasename; : drop,delete the databasename from the system
 
 * Unique Constraint makes sure that all values entered for the field on which the constraint is applied are different.
 
-DESC tablename; : display, describe the tablename contents.
+DESC tablename; : display, describe the tablename contents
+
+DROP TABLE tablename; : drop, remove the tablename from the database
