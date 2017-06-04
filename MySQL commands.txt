@@ -51,3 +51,7 @@ DROP DATABASE databasename; : drop,delete the databasename from the system
 DESC tablename; : display, describe the tablename contents
 
 DROP TABLE tablename; : drop, remove the tablename from the database
+
+SHOW TABLES; : show all the tables in the database
+
+TRUNCATE TABLE tablename; : truncate, delete all the data in tablename
