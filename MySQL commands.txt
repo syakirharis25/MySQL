@@ -55,3 +55,14 @@ DROP TABLE tablename; : drop, remove the tablename from the database
 SHOW TABLES; : show all the tables in the database
 
 TRUNCATE TABLE tablename; : truncate, delete all the data in tablename
+
+* MySQL operator symbols : +, -, *, /, <. >, =
+* MySQL operators generally used with the WHERE clause, it is used to limit the number of rows obtained in the output.
+* MySQL types of operators: a) arithmetic, b) comparison, c) logical, d) reverse
+* MySQL arithmetic operators : a)Addition(+), b)Subtraction(-), c)Multiplication(*), d)Division(/), e)Modular Division(%)
+
+SELECT number + number; : do addition operation
+SELECT number - number; : do subraction operation
+SELECT number * number; : do multiplication operation
+SELECT number / number; : do division operation
+SELECT number % number; : do modulus operation
