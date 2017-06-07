@@ -66,3 +66,11 @@ SELECT number - number; : do subraction operation
 SELECT number * number; : do multiplication operation
 SELECT number / number; : do division operation
 SELECT number % number; : do modulus operation
+
+* MySQL comparison operators used to compare data present in columns to data specified in conditions.
+
+* MySQL operators : 1)Equal To (=), 2)Not Equal To (<>), 3)Greater Than (>), 4)Less Than (<), 5)Greater Than or Equal To (>=), 6)Less Than or Equal To (<=)
+
+SELECT * FROM employee WHERE salary<15000; : display all the information from employee database where salary is below 15000
+
+SELECT salary FROM employee HERE nam='John'; : display salary of John from the employee database
