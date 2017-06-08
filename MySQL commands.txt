@@ -101,3 +101,13 @@ WHERE age BETWEEN 28 AND 36; : display all the employee records where the age is
 SELECT * 
 FROM employee
 WHERE age < ALL (SELECT age FROM employee WHERE salary>20000); : display all employee table data where age is below all the age in employee table data where their salary is above 20000
+
+* WHERE clause is used to include a condition while fetching data from tables. It is also used to join multiple tables.
+
+SELECT column_list
+FROM table_name
+[WHERE condition]; : display all the data from table_name where column_list meet the condition
+
+SELECT *
+FROM employee
+WHERE name = 'Kurt'; : display from employee data table where column has name equal to Kurt
