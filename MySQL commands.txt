@@ -74,3 +74,30 @@ SELECT number % number; : do modulus operation
 SELECT * FROM employee WHERE salary<15000; : display all the information from employee database where salary is below 15000
 
 SELECT salary FROM employee HERE nam='John'; : display salary of John from the employee database
+
+* MySQL logical operators are to create complex query conditions
+* MySQL logical operator types : a)ALL, b)AND, c)BETWEEN, d)IN, e)IN, f)LIKE, g)IS NULL
+
+SELECT * 
+FROM employee
+WHERE age<=30 AND salary<=25000; : display all the rows data of employee table that contain age above and equals to 30 and salary below and equal to 25000 from the employee table
+
+SELECT *
+FROM employee
+WHERE salary IS NULL; : display all employee table data where salary got null value or no value at all
+
+SELECT *
+FROM employee
+WHERE name LIKE 'p%'; : display all the employee rows data where name start with p character
+
+SELECT *
+FROM employee
+WHERE age IN (28,30,36); : display all the employee records where the age is 28,30,36
+
+SELECT *
+FROM employee
+WHERE age BETWEEN 28 AND 36; : display all the employee records where the age is between 28 and 36
+
+SELECT * 
+FROM employee
+WHERE age < ALL (SELECT age FROM employee WHERE salary>20000); : display all employee table data where age is below all the age in employee table data where their salary is above 20000
