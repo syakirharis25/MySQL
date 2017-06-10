@@ -132,3 +132,16 @@ WHERE id=19000; : update the employee data table by setting the age to 26 where 
 
 DELETE FROM table_name
 [WHERE condition]; : delete from table_name where it meets the stated condition
+
+* LIKE operator is used to compare a value to similar values in a table of the database.
+* LIKE operator is used with Wildcard characters.
+
+* Wildcard Characters : 1)% (percentage symbol : substitution for zero, one or many characters), 2)_ (underscore character : stands for one character or number)
+
+SELECT *
+FROM employee
+WHERE email LIKE '%hotmail%'; : display from employee data table where their email got hotmail extension in it
+
+SELECT *
+FROM employee
+WHERE age LIKE '2_'; : display from employee data table where their age start with 2 in 2 digit format
