@@ -145,3 +145,7 @@ WHERE email LIKE '%hotmail%'; : display from employee data table where their ema
 SELECT *
 FROM employee
 WHERE age LIKE '2_'; : display from employee data table where their age start with 2 in 2 digit format
+
+SELECT *
+FROM employee
+LIMIT 5; : display top 5 column from employee table data
