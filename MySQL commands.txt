@@ -126,3 +126,9 @@ WHERE salary > 15000 OR age < 30; : display all the records of employee data tab
 UPDATE employee
 SET age=26
 WHERE id=19000; : update the employee data table by setting the age to 26 where id is 19000
+
+* The DELETE query is used to delete records from a table
+* DELETE query mostly used with the WHERE clause
+
+DELETE FROM table_name
+[WHERE condition]; : delete from table_name where it meets the stated condition
