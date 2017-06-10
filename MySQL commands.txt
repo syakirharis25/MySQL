@@ -119,3 +119,10 @@ WHERE name = 'Kurt'; : display from employee data table where column has name eq
 SELECT * 
 FROM employee
 WHERE salary > 15000 OR age < 30; : display all the records of employee data table where their salary is above 15000 or their age is below 30
+
+* UPDATE query is used to update rows in a table
+* UPDATE query generally used with the WHERE clause
+
+UPDATE employee
+SET age=26
+WHERE id=19000; : update the employee data table by setting the age to 26 where id is 19000
