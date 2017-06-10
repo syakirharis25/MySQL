@@ -149,3 +149,21 @@ WHERE age LIKE '2_'; : display from employee data table where their age start wi
 SELECT *
 FROM employee
 LIMIT 5; : display top 5 columns from employee table data
+
+* MySQL ORDER BY clause is to sort data fetched from a table.
+
+SELECT *
+FROM employee
+ORDER BY name; : sort the employee data table, order by their name
+
+SELECT *
+FROM employee
+ORDER BY age; : display employee data table sort by their youngest age
+
+SELECT *
+FROM employee
+ORDER BY age DESC; : display employee data table sort by their oldest age
+
+SELECT *
+FROM employee
+ORDER BY salary DESC; : display employee data table sort by their highest salary
