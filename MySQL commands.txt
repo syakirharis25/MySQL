@@ -111,3 +111,11 @@ FROM table_name
 SELECT *
 FROM employee
 WHERE name = 'Kurt'; : display from employee data table where column has name equal to Kurt
+
+* AND or OR operators are used to combine multiple conditions specified with the WHERE clause.
+* AND makes it necessary for all conditions to be true.
+* OR works even if any one is true
+
+SELECT * 
+FROM employee
+WHERE salary > 15000 OR age < 30; : display all the records of employee data table where their salary is above 15000 or their age is below 30
