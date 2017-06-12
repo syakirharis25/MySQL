@@ -167,3 +167,15 @@ ORDER BY age DESC; : display employee data table sort by their oldest age
 SELECT *
 FROM employee
 ORDER BY salary DESC; : display employee data table sort by their highest salary
+
+* GROUP BY clause is used to array indentical data in groups
+* GROUP BY clause is used with the SELECT query
+* GROUP BY must always follow the WHERE clause and must precede the ORDER BY clause
+
+SELECT subject, COUNT(*)
+FROM tutorial
+GROUP BY subject; : count the number of subject from tutorial data field and group them by subject
+
+SELECT subject, SUM(duration)
+FROM tutorial
+GROUP BY subject; : sum up all the duration from tutorial data field and group them by subject
