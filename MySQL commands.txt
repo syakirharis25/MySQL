@@ -188,3 +188,14 @@ FROM tutorial;															: display title, upload_date, duration from tutoria
 
 SELECT title AS Title, upload_date AS 'Upload Date', duration AS Length
 FROM tutorial;															: display title as Title, upload_Date as Upload Date, duration as Length from tutorial data table
+
+SELECT t.id, t.title, t.duration,
+ti.views, ti.likes, ti.shares
+FROM tutorial AS t
+JOIN tutorial_info AS ti
+ON t.id=ti.tutorial_id; 				: select id, title, duration from tutorial data table aliasing as t, select views, likes, shares from tutorial_info data table aliasing as ti, join both tables on the same id number
+
+SELECT t.id, t.title, t.duration,
+ti.views, ti.likes, ti.shares
+FROM tutorial AS t, tutorial_info AS ti
+WHERE t.id=ti.tutorial_id; 				: select id, title, duration from tutorial data table, aliasing them as t, select views, likes, shares, aliasing them as ti where their id number are the same
