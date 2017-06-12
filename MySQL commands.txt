@@ -208,8 +208,15 @@ ON t.id=ti.tutorial_id
 GROUP BY t.subject;									: select subject, sum of views from tutorial data table, display sum of views as total views, select sum of likes from tutorial_info data table, aliasing tutorial as t, aliasing tutorial_info as ti, join both tutorial and tutorial_info on same id number, group them by the tutorial data table subject
 
 SELECT t.subject, SUM(ti.views) AS 'Total Views',
-SUM (ti.likes) AS 'Total Likes'
+SUM(ti.likes) AS 'Total Likes'
 FROM tutorial AS t
 LEFT JOIN tutorial_info AS ti
 ON t.id=ti.tutorial_id
-GROUP BY t.subject; 								: select subject, sum of views aliasing it as Total Views from tutorial data table, select sum of likes aliasing it as Total Likes from tutorial_info data table, aliasing tutorial as t, aliasing tutorial_info as ti, left join both tables on the same id number although one of the table did not consist enough data on it, group them by subject from tutorial data table
+GROUP BY t.subject; 								: select subject, sum of views aliasing it as Total Views from tutorial data table, select sum of likes aliasing it as Total Likes from tutorial_info data table, aliasing tutorial as t, aliasing tutorial_info as ti, left join both tables on the same id number although one of the table did not consist enough data on it, group them by subject from tutorial data table, pull tutorial_info data table into tutorial data table
+
+SELECT t.subject, SUM(ti.views) AS 'Total Views',
+SUM(ti.likes) AS 'Total Likes'
+FROM tutorial AS t
+RIGHT JOIN tutorial_info AS ti
+ON t.id=ti.tutorial_id
+GROUP BY t.subject;									: select subject, sum of views aliasing as Total Views from tutorial data table, select sum of likes aliasing as Total Likes from tutorial_info data table, aliasing tutorial as t, aliasing tutorial_info as ti, right join both tables on the same id number although one of the table did not consist enough data in it, group them by subject in tutorial data table, pull tutorial data table into tutorial_info data table
