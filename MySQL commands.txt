@@ -229,3 +229,23 @@ ABS(ti.likes-ti.dislikes) AS 'Difference of Likes and Dislikes'
 FROM tutorial AS t
 JOIN tutorial_info AS ti
 ON t.id=ti.tutorial_id;											: select title from tutorial data table, select absolute values of differences of likes and dislikes from tutorial_info data table, display it as Differences of Likes and Dislikes, aliasing tutorial as t, aliasing tutorial_info as ti, join both tables on the same id number
+
+SELECT ROUND(54.783); 	: round it to 55
+SELECT ROUND(54.783,0);	: round it to 55, keep 0 decimal point
+SELECT ROUND(54.783,1); : round it to 54.8, keep 1 decimal point
+SELECT ROUND(54.783,2); : round it to 54.78, keep 2 decimal points
+SELECT ROUND(54.787,2); : round it to 54.79, keep 2 decimal points
+SELECT ROUND(-12.57,0); : round it to -13, keep 0 decimal point
+
+SELECT t.subject, AVG(ti.likes)
+FROM tutorial AS t
+JOIN tutorial_info AS ti
+ON t.id=tutorial_id
+GROUP BY t.subject; 			: select subject from tutorial data table, select average likes number from tutorial_info data table, join both tables on their same id number, group by subject in tutorial data table
+
+SELECT t.subject, ROUND(AVG(ti.likes))
+AS 'The Average number of Likes rounded off to the nearest decimal point'
+FROM tutorial AS t
+JOIN tutorial_info AS ti
+ON t.id=tutorial_id
+GROUP BY t.subject; 														: select subject from tutorial data table, select average likes from tutorial_info data table and round it off to the nearest decimal point, change the title of the calculation aliasing it into The Average number of Likes rounded off to the nearest decimal point, aliasing tutorial as t, aliasing tutorial_info as ti, join both tables on the same id number, group them by subject in tutorial data table
