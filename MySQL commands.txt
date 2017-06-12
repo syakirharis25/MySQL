@@ -174,8 +174,11 @@ ORDER BY salary DESC; : display employee data table sort by their highest salary
 
 SELECT subject, COUNT(*)
 FROM tutorial
-GROUP BY subject; : count the number of subject from tutorial data field and group them by subject
+GROUP BY subject; 				: count the number of subject from tutorial data table and group them by subject
 
 SELECT subject, SUM(duration)
 FROM tutorial
-GROUP BY subject; : sum up all the duration from tutorial data field and group them by subject
+GROUP BY subject; 				: sum up all the duration from tutorial data table and group them by subject
+
+SELECT salary FROM employee
+ORDER BY salary;				: display salary from employee data table, distinct them from each other and order them by salary
