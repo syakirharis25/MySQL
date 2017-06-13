@@ -310,3 +310,9 @@ SELECT INSERT('Hello Word', 7, 5, 'World'); : insert the 7th position from left 
 SELECT REPEAT('Good Morning!', 10); : repeat the statement in REPEAT() function 10 times
 
 SELECT REPLACE('Good Morning!', 'Morning', 'Night'); replace 'Morning' with 'Night' in the REPLACE() function statement, display 'Good Night!'
+
+SELECT REVERSE('See you later, Alligator'); : reverse the statement in REVERSE() function
+
+SELECT STRCMP('Day', 'Day'); 	: compare the string 'Day' with 'Day', display 0 as 'D' is equal value to 'D'
+SELECT STRCMP('Day', 'Night'); 	: compare the string 'Day' with 'Night', display -1 because 'D' is smaller than the value of 'N'
+SELECT STRCMP('Night', 'Day');	: compare the string 'Night' with 'Day', display 1 beacuse 'N' is larger than the value of 'D'
