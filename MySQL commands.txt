@@ -287,3 +287,9 @@ SELECT CONCAT('Hello ', 'World'); : concatenate 'Hello ' and 'World' to become '
 
 SELECT CONCAT(title, ' belongs to ', subject) AS Tutorial
 FROM tutorial; 												: select and concatenate title data field with ' belongs to ' words and subject data field, aliasing all of them as Tutorial, pull all the relevant data from tutorial data table
+
+SELECT UPPER('Hey there!'); 		: display the letters written in the UPPER() function in upper case letters, display 'HEY THERE!'
+SELECT LOWER('Hey there!'); 		: display the letters written in the LOWER() function in lower case letters, display 'hey there!'
+
+SELECT UPPER(title) FROM tutorial; 	: display title data field from tutorial data table in upper case letters
+SELECT LOWER(title) FROM tutorial; 	: display title data field from tutorial data table in lower case letters
