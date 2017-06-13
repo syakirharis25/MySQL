@@ -282,3 +282,8 @@ SELECT TRUNCATE(225.6548,2) 			: truncate the value in the TRUNCATE() function t
 SELECT TRUNCATE(225.6548546465463,5); 	: truncate the value in the TRUNCATE() function to 5 decimal points, which will display 225.65485
 
 SELECT RAND(); : generate random numbers
+
+SELECT CONCAT('Hello ', 'World'); : concatenate 'Hello ' and 'World' to become 'Hello World' statement
+
+SELECT CONCAT(title, ' belongs to ', subject) AS Tutorial
+FROM tutorial; 												: select and concatenate title data field with ' belongs to ' words and subject data field, aliasing all of them as Tutorial, pull all the relevant data from tutorial data table
