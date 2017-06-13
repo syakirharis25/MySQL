@@ -257,4 +257,8 @@ SELECT duration FROM tutorial; : display duration data field from tutorial data 
 
 SELECT title, duration DIV 1 AS minutes,
 duration*60 MOD 60 AS seconds
-FROM tutorial;							 : select title, duration divide by 1 aliasing it as minutes, multiply duration by 60 modulus 60 as seconds from tutorial data table  
+FROM tutorial;							 	: select title, duration divide by 1 aliasing it as minutes, multiply duration by 60 modulus 60 as seconds from tutorial data table
+
+SELECT title, duration DIV 1 AS minutes,
+ROUND(duration*60 MOD 60) AS seconds
+FROM tutorial;								: select title, duration divide by 1 aliasing as minutes, duration multiply by 60 modulus 60, round them all and aliasing it as seconds from tutorial data table
