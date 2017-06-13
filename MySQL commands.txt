@@ -306,3 +306,7 @@ SELECT LENGTH('Hello World!'); 		: estimate the space in computer memory for the
 SELECT CHAR_LENGTH('Hello World!') 	: count the length of characters in the CHAR_LENGTH() function including the spaces, display 12
 
 SELECT INSERT('Hello Word', 7, 5, 'World'); : insert the 7th position from left with lenghth of 5, the characters 'World', display 'Hello World'
+
+SELECT REPEAT('Good Morning!', 10); : repeat the statement in REPEAT() function 10 times
+
+SELECT REPLACE('Good Morning!', 'Morning', 'Night'); replace 'Morning' with 'Night' in the REPLACE() function statement, display 'Good Night!'
