@@ -300,3 +300,9 @@ SELECT SUBSTR('I need a break', 10, 5); : select the letters from the offset 10t
 
 SELECT RIGHT('I need a break', 5); 		: select the letters 5th from the right position in th RIGHT() function, display 'break'
 SELECT LEFT('I need a break', 6); 		: select the letters 6th from the left psoition in the LEFT() function, display 'I need' 
+
+SELECT LENGTH('Hello World!'); 		: estimate the space in computer memory for the statement in the LENGTH() function, display 12
+
+SELECT CHAR_LENGTH('Hello World!') 	: count the length of characters in the CHAR_LENGTH() function including the spaces, display 12
+
+SELECT INSERT('Hello Word', 7, 5, 'World'); : insert the 7th position from left with lenghth of 5, the characters 'World', display 'Hello World'
