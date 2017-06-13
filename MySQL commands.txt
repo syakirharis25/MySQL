@@ -295,3 +295,8 @@ SELECT UPPER(title) FROM tutorial; 	: display title data field from tutorial dat
 SELECT LOWER(title) FROM tutorial; 	: display title data field from tutorial data table in lower case letters
 
 SELECT TRIM('     i have got too much spaces on either side    '); : trim the spaces for the statement in TRIM() function
+
+SELECT SUBSTR('I need a break', 10, 5); : select the letters from the offset 10th position with length of 5, display 'break'
+
+SELECT RIGHT('I need a break', 5); 		: select the letters 5th from the right position in th RIGHT() function, display 'break'
+SELECT LEFT('I need a break', 6); 		: select the letters 6th from the left psoition in the LEFT() function, display 'I need' 
