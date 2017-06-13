@@ -249,3 +249,12 @@ FROM tutorial AS t
 JOIN tutorial_info AS ti
 ON t.id=tutorial_id
 GROUP BY t.subject; 														: select subject from tutorial data table, select average likes from tutorial_info data table and round it off to the nearest decimal point, change the title of the calculation aliasing it into The Average number of Likes rounded off to the nearest decimal point, aliasing tutorial as t, aliasing tutorial_info as ti, join both tables on the same id number, group them by subject in tutorial data table
+
+SELECT 5 DIV 2; : divide 5 by 2, display 2
+SELECT 5 MOD 2; : give the result of 5 modulus 2, display 1
+
+SELECT duration FROM tutorial; : display duration data field from tutorial data table
+
+SELECT title, duration DIV 1 AS minutes,
+duration*60 MOD 60 AS seconds
+FROM tutorial;							 : select title, duration divide by 1 aliasing it as minutes, multiply duration by 60 modulus 60 as seconds from tutorial data table  
