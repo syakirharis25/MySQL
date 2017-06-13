@@ -262,3 +262,23 @@ FROM tutorial;							 	: select title, duration divide by 1 aliasing it as minut
 SELECT title, duration DIV 1 AS minutes,
 ROUND(duration*60 MOD 60) AS seconds
 FROM tutorial;								: select title, duration divide by 1 aliasing as minutes, duration multiply by 60 modulus 60, round them all and aliasing it as seconds from tutorial data table
+
+SELECT CEIL(35.40); 	: give the ceiling number for 35.40. which will display 36
+SELECT FLOOR(35.40); 	: give the floor number for 35.40, which will display 35
+SELECT EXP(5);			: give the exponential value of 5
+SELECT LOG(5);			: give the log value of 5, base e
+SELECT LOG10(2);		: give the log value of 2, base 10
+SELECT POW(2,7);		: give the power value of 2 power of 7
+SELECT POW(2.718,5);	: give the power value of 2.718 power of 5
+
+SELECT GREATEST(5,3,1,77,9,11,6,3,3,89); 	: give the highest number value for the range of numbers in the GREATEST() function, which will display 89
+SELECT LEAST(5,3,1,77,9,11,6,3,3,89);		: give the lowest number value for the range of numbers in the LEASET() function, which will display 1
+
+SELECT RADIANS(180); 	: show the radians result for 180
+SELECT SQRT(196);		: show the square root for 196 which is 14
+SELECT SQRT(225); 		: show the square root for 225 which is 15
+
+SELECT TRUNCATE(225.6548,2) 			: truncate the value in the TRUNCATE() function to 2 decimal points, which will display 225.65
+SELECT TRUNCATE(225.6548546465463,5); 	: truncate the value in the TRUNCATE() function to 5 decimal points, which will display 225.65485
+
+SELECT RAND(); : generate random numbers
