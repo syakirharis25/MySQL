@@ -293,3 +293,5 @@ SELECT LOWER('Hey there!'); 		: display the letters written in the LOWER() funct
 
 SELECT UPPER(title) FROM tutorial; 	: display title data field from tutorial data table in upper case letters
 SELECT LOWER(title) FROM tutorial; 	: display title data field from tutorial data table in lower case letters
+
+SELECT TRIM('     i have got too much spaces on either side    '); : trim the spaces for the statement in TRIM() function
