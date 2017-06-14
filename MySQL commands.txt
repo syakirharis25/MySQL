@@ -400,3 +400,13 @@ SELECT * FROM tutorial; : display the result of previous MySQL command
 
 SELECT id, name FROM employee
 WHERE salary=(SELECT MAX(salary) FROM employee); : select id, name from employee data table where they are the highest maximum salary from employee data table
+
+ALTER TABLE employee ADD city CHAR(20); : alter the employee data table by adding city with the length of 20 characters in it
+
+SELECT * FROM employee; : display the result of previous MySQL command
+
+ALTER TABLE employee DROP city; : drop, delete the city data field from employee data table
+
+DESCRIBE employee; : describe the structure of current employee data field
+
+ALTER TABLE employee MODIFY name CHAR(30) NOT NULL; : alter the employee data table by modifying name into character with length of 30 and NOT NULL format
