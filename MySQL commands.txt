@@ -393,3 +393,10 @@ FROM employee; 		: display the sum salary of all employees
 
 SELECT AVG(age)
 FROM employee;		: display the average salary of all employees
+
+TRUNCATE TABLE tutorial; : delete all the data in tutorial data table
+
+SELECT * FROM tutorial; : display the result of previous MySQL command
+
+SELECT id, name FROM employee
+WHERE salary=(SELECT MAX(salary) FROM employee); : select id, name from employee data table where they are the highest maximum salary from employee data table
