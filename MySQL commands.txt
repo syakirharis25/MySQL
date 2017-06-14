@@ -379,3 +379,17 @@ WHERE id=1917; 			: delete from emp_view and source table, employee table where 
 DROP VIEW emp_view; : drop the emp_view table from the system
 
 SELECT * FROM emp_view; : will return MySQL error message since emp_view table did not exist anymore
+
+SELECT COUNT(*) FROM employee; 	: count all rows of employee data table
+
+SELECT count(*) FROM employee
+WHERE age>25;					: count all rows of employee data table where their age is above 25 years old
+
+SELECT MAX(age) FROM employee; 	: display the oldest employee age
+SELECT MAX(age) FROM employee;  : display the youngest employee age
+
+SELECT SUM(salary)
+FROM employee; 		: display the sum salary of all employees
+
+SELECT AVG(age)
+FROM employee;		: display the average salary of all employees
