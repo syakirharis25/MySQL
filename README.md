@@ -1,2 +1,2 @@
 # MySQL
-My works related to MySQL database system
+My works related to MySQL database system.
